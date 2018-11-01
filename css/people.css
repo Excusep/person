@@ -1,0 +1,359 @@
+/*
+* @Author: Administrator
+* @Date:   2018-08-13 09:04:52
+* @Last Modified by:   Administrator
+* @Last Modified time: 2018-08-13 22:59:29
+*/
+/* 公共样式 小小屏<768 */
+/* 顶部导航 */
+nav{
+	width: 100%;
+	height: 59px;
+	background: #212a3f;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 60;
+}
+nav .con{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+nav .con h4{
+	color: #fff;
+	font-size: 30px;
+	line-height: 60px;
+	margin: 0;
+}
+nav .con .list a{
+	color: #999;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 60px;
+	margin-left: 24px;
+}
+
+nav .con .list a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+nav .con .list a.list-text{
+	display: none;
+}
+.banner{
+	width: 100%;
+	height: 670px;
+	background-image: url('../img/bg.png');
+	margin-top: 59px;
+	background-size: cover;
+	background-position: center;
+	/* 当屏幕滚动式背景图片固定 */
+	background-attachment: fixed;
+}
+.banner .banner-box{
+	height: 369px;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-top: 175px;
+	padding:0 40px;
+	text-align: center;
+	color: #fff;
+}
+.banner .banner-box .text1{
+	font-size: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	
+	
+}
+.banner .banner-box .text2{
+	font-size: 55px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/* 双边框 */
+	border-top: 7px double red;
+	border-bottom: 7px double red;
+}
+.banner .banner-box .text3{
+	font-size: 20px;
+	padding-top:20px ;
+	padding-bottom: 0px;
+}
+.banner .banner-box .text4{
+	font-size: 14px;
+	padding-top:0px ;
+	padding-bottom: 20px;
+}
+.banner .banner-box .text5{
+	font-size: 18px;
+	width: 80px;
+	height: 50px;
+	border: 1px solid #fff;
+	line-height: 30px;
+	padding-top:10px ;
+	margin: 0 auto 15px;
+}
+
+/* welcome */
+.wel{
+	text-align: center;
+	padding-bottom: 40px;
+	padding-top: 35px;
+}
+.wel h3{
+	font-weight: 300;
+    font-size: 42px;
+    color: #8AB839;
+}
+.wel h4{
+	width: 75%;
+    margin: 0 auto;
+    font-weight: 400;
+    color: #2E2E2E;
+    font-size: 16px;
+    text-align: left;
+    line-height: 25px;
+
+}
+/* Features */
+.Features{
+	width: 100%;
+	background: #8AB839;
+}
+.Features .title{
+	padding-top: 15px;
+	padding-bottom: 16px;
+	text-align: center;
+	font-size: 30px;
+}
+.Features ul li{
+	padding: 0 20px 35px;
+}
+.Features ul li .icon img{
+	width: 83px;
+	height: 83px;
+	margin-top: 20px;
+}
+.Features ul li .icon h3{
+	margin: 0 ;
+}
+/* portfolio */
+.portfolio{
+	width: 100%;
+	margin-top: 40px;
+}
+.portfolio .title{
+	padding-top: 15px;
+	padding-bottom: 16px;
+	text-align: center;
+	font-size: 30px;
+}
+.portfolio ul li{
+	height: 246px;
+	margin-bottom: 40px;
+	position: relative;
+}
+.portfolio ul li img{
+	width: 100%;
+	height: 200px;
+}
+.portfolio ul li .text{
+	width: 100%;
+	height: 47px;
+	background: #8AB839;
+	color: #fff;
+	
+}
+.portfolio ul li h4{
+	text-align: center;
+	
+}
+.portfolio ul li .cover {
+	width: calc(100% - 30px);
+	height: 0;
+	background-color: rgba(255, 255,255, 0.6);
+	position: absolute;
+	top: 0;
+	left: 15px;
+}
+.portfolio ul li:hover .cover{
+	height: 200px;
+	transition: height .5s;
+}
+
+/* files */
+.ico{
+	width: 100%;
+	height: 572px;
+	background: #212A3F;
+}
+.ico ul{
+	margin-top: 80px;
+}
+.ico ul li{
+	height: 74px;
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.ico ul li .text{
+	text-align: center;
+	padding-top: 10px;
+	color: #fff;
+	font-weight: bold;
+}
+.ico ul li img{
+	width: 44px;
+	height: 30px;
+}
+.ico ul li .pro{
+	width: 42px;
+	height: 39px;
+}
+.ico ul li .line{
+	width: 42px;
+	height: 38px;
+}
+.ico ul li .happ{
+	width: 42px;
+	height: 42px;
+}
+
+/* contact */
+.contact{
+	width: 100%;
+	background: #fff;
+}
+.contact .title{
+	padding-top: 15px;
+	padding-bottom: 16px;
+	text-align: center;
+	font-size: 30px;
+}
+.contact .form-control{
+	background:#D2D4D8;
+	height: 46px;
+}
+.contact .three{
+	height:66px ;
+}
+.contact .btn{
+	background: #8AB839;
+	width: 116px;
+	height: 45px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 18px;
+}
+.address{
+	margin-top:190px; 
+}
+.address h4{
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.address h5{
+	margin: 0 0 10px;
+	color: #333;
+	font-size: 14px;
+}
+.address .iconfont{
+	color: #8AB839;
+}
+
+/* 底部 */
+.bot{
+	width: 100%;
+	height: 315px;
+	background-image: url('../img/notes-bg.jpg');
+	background-position: bottom;
+	display: flex;
+	margin-top: 70px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.bot .cover{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bot h5{
+	font-size: 17px;
+    margin: 0px !important;
+    font-weight: 300;
+    line-height: 30px; 
+    text-align: center;
+    color: #fff;
+    z-index: 80;
+}
+.bot a{
+	height: 52px;
+    width: 110px;
+    margin-top: 10px;
+    background-color: #8ab839;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 52px;
+    border-radius: 4px;
+    z-index: 80
+}
+.bott {
+	font-size: 16px;
+	line-height: 10px;
+	text-align: center;
+	color: #333;
+}
+.bott a{
+	color: #8AB839;
+}
+
+/* 小屏幕 col-sm- >768px */
+@media screen and (min-width: 768px){
+	nav .con .list a.list-text{
+		display: inline;
+	}
+	nav .con .list a.list-icon{
+		display: none;
+	}
+	.wel h4{
+		text-align: center;
+	}
+	.ico{
+	height: 263px;
+}
+.bot{
+		height: 285px;
+	}
+	.bot{
+		height: 220px;
+	}
+	.bot{
+		display: flex;
+		flex-direction:row;
+	}
+	.bot h5{
+		padding-right: 80px;
+	}
+}
+
+/* 中等屏幕 col- md- >992px */
+@media screen and (min-width: 992px){
+	.contact{
+		width: 50%;
+	}
+
+}
+/* 大屏幕 col-  lg- >1200px*/
+@media screen and (min-width: 1200px){
+	
+}
